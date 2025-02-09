@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<title>Poem</title>
+
+<!-- Importing Poiret One and Merriweather from Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+body{
+    background-color: #c5ab94;
+}
+
+.outer{
+    text-align: center;
+}
+
+.spotart{
+    width: 200px;
+    float: right;
+}
+
+.headimg{
+    width: 100%;
+}
+
+.page{
+    max-width: 850px;
+    display: inline-block;
+    text-align: left;
+    background-color: white;
+    padding: 10px;
+}
+
+.headline{
+    font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #5b2300;
+}
+
+.subtitle {
+    font-family: 'Poiret One', cursive;
+    font-weight: 500;
+    font-size: 19px;
+    color: #5b2300;
+}
+
+.centertext{
+    text-align: center;
+    padding: 20px;
+}
+
+.poempad{
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    color: #3a3033;  
+  	padding: 40px;
+}
+
+</style>
+</head>
+<body>
+<div class="outer">
+    <div class="page">
+        <img src="img/header.jpg" class="headimg"/>
+
+        <div class="centertext">
+            <span class="headline">Sonnet 18</span>
+            <br>
+            <span class="subtitle">William Shakespeare</span>
+        
+            <div class="poempad">
+                <p>Shall I compare thee to a summer’s day?</p>
+                <p>Thou art more lovely and more temperate:</p>
+                <p>Rough winds do shake the darling buds of May,</p>
+                <p>And summer’s lease hath all too short a date:</p>
+                <p>Sometime too hot the eye of heaven shines,</p>
+                <p>And often is his gold complexion dimm’d;</p>
+                <p>And every fair from fair sometime declines,</p>
+                <p>By chance or nature’s changing course untrimm’d;</p>
+                <p>But thy eternal summer shall not fade</p>
+                <p>Nor lose possession of that fair thou owest;</p>
+                <p>Nor shall Death brag thou wander’st in his shade,</p>
+                <p>When in eternal lines to time thou growest:</p>
+                <p>So long as men can breathe or eyes can see,</p>
+                <p>So long lives this and this gives life to thee.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
