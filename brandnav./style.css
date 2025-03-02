@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('img/background.jpg'); /* Full-width background */
+    background-image: url('img/menu_img.jpg'); /* Full-width background */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keeps image in place while scrolling */
