@@ -75,9 +75,9 @@ body, html {
 }
 
 /* Background Images */
-.tile1 { background-image: url('img/finance.jpg'); }
-.tile2 { background-image: url('img/life.jpg'); }
-.tile3 { background-image: url('img/politics.jpg'); }
-.tile4 { background-image: url('img/sport.jpg'); }
-.tile5 { background-image: url('img/entertainment.jpg'); }
-.tile6 { background-image: url('img/deals.jpg'); }
+.tile1 { background-image: url('img/finance.png'); }
+.tile2 { background-image: url('img/life.png'); }
+.tile3 { background-image: url('img/politics.png'); }
+.tile4 { background-image: url('img/sport.png'); }
+.tile5 { background-image: url('img/entertainment.png'); }
+.tile6 { background-image: url('img/deals.png'); }
