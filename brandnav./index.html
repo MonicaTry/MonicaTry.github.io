@@ -1,47 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brand Navigation</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Mobile Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="menu.js" type="text/javascript"></script>
+
 </head>
 <body>
 
-    <!-- Header Section with Navigation -->
-    <header>
+<div class="outer">
+
+    <!-- Top Navigation Bar -->
+    <div class="topofpage">
         <div class="logo">
-            <a href="#"><img src="img/logo.png" alt="Brand Logo"></a>
+            <img class="logo" src="img/logo.jpg" alt="Yahoo logo" />
         </div>
-        
-        <nav class="nav-links">
-            <ul>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Finance</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">More</a></li>
-            </ul>
-        </nav>
-
-        <!-- Hamburger Menu for Mobile -->
-        <div class="menu-toggle">
-            <img src="img/menu-icon.png" alt="Menu Icon">
+        <div id="menu" onclick="showmenu();">
+            <img src="img/menu_img.jpg" alt="menu"/>
         </div>
-    </header>
-
-    <!-- Fullscreen Mobile Menu Overlay -->
-    <div class="mobile-menu">
-        <div class="close-btn">
-            <img src="img/close-icon.png" alt="Close Menu">
+        <div class="navbar">
+            <a href="news.html">News</a>
+            <a href="finance.html">Finance</a>
+            <a href="sports.html">Sports</a>
+            <a href="more.html">More</a>
         </div>
-        <ul>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Finance</a></li>
-            <li><a href="#">Sports</a></li>
-            <li><a href="#">More</a></li>
-        </ul>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Hero Image -->
+    <div class="hero">
+        <!-- Add background image or other content for the hero section here -->
+    </div>
+
+    <!-- Menu Overlay -->
+    <div id="menuoverlay">
+        <!-- This is where the menu items will appear once the menu is activated -->
+        <div class="overlay-content">
+            <a href="news.html">News</a>
+            <a href="finance.html">Finance</a>
+            <a href="sports.html">Sports</a>
+            <a href="more.html">More</a>
+        </div>
+        <span id="close" onclick="closemenu();">&times;</span>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="page">
+        <!-- Add the page content here -->
+    </div>
+
+</div>
+
 </body>
 </html>
