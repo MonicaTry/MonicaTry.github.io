@@ -1,92 +1,153 @@
-body{
-	margin:0;
-	padding:0;
-   background-color: #999;
-   font-size: 40px;
-   font-family: sans-serif;
-
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-size: 40px;
+    font-family: sans-serif;
 }
 
 * {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
 }
 
-
-
-.outer{
-  text-align: center;
+.outer {
+    text-align: center;
 }
 
-.page{
-	position:relative;
-	margin-top:0px;
-	background-color: #FFF;
-   max-width:1200px;
-   width:100%;
-  height:100%;
-  display: inline-block;
-   text-align: left;
-   height:98vh;
+.page {
+    position: relative;
+    margin-top: 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+    height: 98vh;
 }
 
-/* animation 1 */
-
-.a_box{
-   text-align: center;
-   font-size:20px;
-   color:#FFF;
-   background-color: #777;
-   padding:20px;
-   width:200px;
-   height:200px;
-  border-radius:100px;
-
-   box-sizing: border-box;
-   margin:50px;
-   display: inline-block;
-
-   outline: 1px solid transparent;
-
-
-   animation-delay: 2s;
-   animation-fill-mode: forwards;
-   animation-name: change;
-   animation-duration: 5s;
-   animation-timing-function: ease-out;
-
-
-
-
-}
-
-
-@keyframes change{
-  
-  0% {
-    background-color: red;
+/* Animation Box 1 */
+.a_box {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #777;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
     border-radius: 100px;
-  }
-  
-  50% {
-    background-color: green;
-    border-radius: 0px;
-    transform: translate(200px, 0px) scale(1.5,1.5);
-  
- 
-  }
-  100% {
-    background-color:blue;
-    border-radius: 100px;
-    
-  }
-
+    box-sizing: border-box;
+    margin: 50px;
+    display: inline-block;
+    outline: 1px solid transparent;
+    animation-name: anim_a;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
+/* Keyframe for the first animation */
+@keyframes anim_a {
+    0% {
+        background-color: red;
+        border-radius: 100px;
+        transform: rotate(0deg);
+    }
+    50% {
+        background-color: green;
+        border-radius: 0px;
+        transform: rotate(180deg) translate(200px, 0);
+    }
+    100% {
+        background-color: blue;
+        border-radius: 100px;
+        transform: rotate(360deg);
+    }
+}
 
+/* Animation Box 2 */
+.b_box {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #555;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 50px;
+    display: inline-block;
+    outline: 1px solid transparent;
+    animation-name: anim_b;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
 
+/* Keyframe for the second animation */
+@keyframes anim_b {
+    0% {
+        background-color: purple;
+        transform: scale(1);
+        opacity: 1;
+    }
+    40% {
+        background-color: orange;
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    80% {
+        background-color: yellow;
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        background-color: pink;
+        transform: scale(1.2);
+        opacity: 0.3;
+    }
+}
 
+/* Animation Box 3 */
+.c_box {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #333;
+    padding: 30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 50px;
+    display: inline-block;
+    outline: 1px solid transparent;
+    animation-name: anim_c;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
 
-
-
-/* animaitn 1 */
+/* Keyframe for the third animation */
+@keyframes anim_c {
+    0% {
+        background-color: cyan;
+        transform: scale(1);
+        border-radius: 50%;
+    }
+    50% {
+        background-color: magenta;
+        transform: scale(2);
+        border-radius: 0;
+    }
+    100% {
+        background-color: lime;
+        transform: scale(1);
+        border-radius: 50%;
+    }
+}
