@@ -35,38 +35,31 @@
 
 		/* Styling for each component */
 		.tile_set {
-			background-color: #86947a;
-			border-radius: 10px;
+			text-align: center; /* Center images and titles */
 			width: 100px;  /* Adjust the width of the tile */
-			text-align: center; /* Center text and icons */
-			padding: 10px;
-			transition: transform 0.3s ease;
 			cursor: pointer;
+			transition: transform 0.3s ease;
 		}
 
 		/* Animation on hover */
-		.tile_set:hover {
-			transform: scale(1.1);
-		}
-
-		/* Image styling for icons */
 		.tile_set img {
 			width: 60px;  /* Adjust the size of the icons */
 			height: 60px; /* Keep it square */
 			object-fit: contain; /* Ensure image doesn't stretch */
 			margin-bottom: 10px;  /* Space below the image */
+			transition: transform 0.3s ease;
 		}
 
-		/* Text Styling */
-		.text_tile {
-			grid-column: span 4;
-			text-align: center;
+		/* Hover animation for images */
+		.tile_set:hover img {
+			transform: scale(1.2);  /* Make the image larger when hovered */
+		}
+
+		/* Text Styling for Titles */
+		.tile_set h2 {
 			color: #86947a;
-		}
-
-		.text_tile h2 {
 			margin: 0;
-			font-size: 24px;
+			font-size: 18px;
 			font-family: 'Montserrat', sans-serif; /* Apply Montserrat font here */
 		}
 	</style>
@@ -103,7 +96,5 @@
 </div>
 
 </body>
-
-</html>
 
 </html>
